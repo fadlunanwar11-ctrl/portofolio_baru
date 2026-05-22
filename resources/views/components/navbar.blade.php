@@ -13,10 +13,13 @@
               <a class="nav-link " href="/">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=/galery>galery</a>
+              <a class="nav-link" href=/gallery>galery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kelas">kelas</a>
+              <a class="nav-link" href="about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('posts.index') }}">post</a>
             </li>
           </ul>
           <ul class="navbar-nav d-flex flex-row">
@@ -31,8 +34,8 @@
               </a>
             </li>
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="#!">
-                <i class="fab fa-instagram"></i>
+              <a class="nav-link" href="">
+                <i class="fab fa-user"></i>
               </a>
             </li>
           </ul>

@@ -4,9 +4,13 @@
     bgImage="/img/madin.jpeg"
     data-aos-once="false"
 >
+    <div class="text-center">
+        <h2 class="fw-bold displai-3 mt-5 text-light">SRUKTUR KEPENGURUSAN MADIN</h2>
+    </div>
     <div class="container m-5 d-flex align-items-center vh-100 " >
+        
         <div class="row g-0 justify-content-around ">
-            <div class="col-md-3 mb-2"data-aos="fade-down"
+            <div class="col-md-3 mb-2"data-aos="zoom-in-down"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine">
                 <img
@@ -39,28 +43,26 @@
             @foreach($posts as $post)
             <div class="col-md-6 d-flex align-items-center vh-100">
                 <div class="continer " >
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-md-6 mb-2"data-aos="fade-down"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine">
+                    <div class="row g-0 justify-content-between ">
+                        <div class="col-md-6 mb-2 p-5">
                             <img
-                                src="{{asset($post->image)}}"
+                                src="{{ asset('storage/' . $post->image) }}"
                                 alt=""
                                 class="img-fluid rounded"
                             />
                         </div>
-                        <div class="col-md-6  my-auto p-2 text-center fw-bold">
-                            <div >
-                                <h2 class="text-info"data-aos="fade-left"
+                        <div class="col-md-6 border-3 border-info border-start my-auto p-1  fw-bold">
+                            <div class="mx-3 text-start">
+                                <h3 class="text-info"data-aos="fade-left"
                                 data-aos-offset="150"
-                                data-aos-easing="ease-in-sine">{{ $post->title }}</h2>
+                                data-aos-easing="ease-in-sine">{{ $post->title }}</h3>
                                 <p class="text-white"data-aos="fade-left"
                                 data-aos-offset="250"
                                 data-aos-easing="ease-in-sine">
                                 {{ $post->description }}
                                 </p>
                                 <p class="card-text">
-                                <small class="text-muted">{{$post->update_at}}</small>
+                                 <small class="text-muted">{{ $post->updated_at->format('d M Y') }}</small> 
                                 </p>
                             </div>
                         </div>
