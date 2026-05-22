@@ -1,0 +1,18 @@
+@import "./navbar.css";
+[data-aos] {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(40px);
+
+    will-change: transform, opacity, filter;
+
+    transition:
+        opacity 0.8s ease,
+        filter 0.8s ease,
+        transform 0.8s ease;
+}
+[data-aos].aos-animate {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
