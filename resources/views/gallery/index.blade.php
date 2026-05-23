@@ -9,14 +9,14 @@ title="admin"
    
         <div class="container text-center">
         <div class="row  ">
-            @foreach($posts as $post)
+            @foreach($galleries as $gallery)
             <div class="col-md-6 d-flex align-items-center vh-100">
                 <div class="conatiner " >
                 
                     <div class="row g-0 justify-content-between ">
                         <div class="col-md-6 mb-2 p-5">
                             <img
-                                src="{{ asset('storage/' . $post->image) }}"
+                                src="{{ asset('storage/' . $gallery->image) }}"
                                 alt=""
                                 class="img-fluid rounded"
                             />
@@ -25,14 +25,14 @@ title="admin"
                             <div class="mx-3 text-start">
                                 <h2 class="text-info"data-aos="fade-left"
                                 data-aos-offset="150"
-                                data-aos-easing="ease-in-sine">{{ $post->title }}</h2>
+                                data-aos-easing="ease-in-sine"></h2>
                                 <p class="text-white"data-aos="fade-left"
                                 data-aos-offset="250"
                                 data-aos-easing="ease-in-sine">
-                                {{ $post->description }}
+                                {{ $$gallery->description }}
                                 </p>
                                 <p class="card-text">
-                                 <small class="text-muted">{{ $post->updated_at->format('d M Y') }}</small> 
+                                 <small class="text-muted">{{ $galleryt->updated_at->format('d M Y') }}</small> 
                                 </p>
                             </div>
                         </div>

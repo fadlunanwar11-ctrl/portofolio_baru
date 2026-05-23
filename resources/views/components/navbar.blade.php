@@ -13,10 +13,10 @@
               <a class="nav-link " href="/">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=/gallery>galery</a>
+              <a class="nav-link" href=/galleryes>galery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about">about</a>
+              <a class="nav-link" href="{{route('galleryes.index')}}">edit gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('posts.index') }}">post</a>
