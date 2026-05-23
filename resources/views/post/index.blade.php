@@ -36,26 +36,33 @@ title="admin"
                             </div>
                         </div>
                     </div>
-                    <form class="text-center"
+                    <div class="row d-flex justify-content-between">
+                        <form class=""
                         action="{{ route('posts.destroy', $post->id) }}"
                         method="POST"
                     >
                                 @csrf
                         @method('DELETE')
 
-                        <button class="btn btn-danger">
+                        <button class="btn btn-danger col-4">
                             Hapus
                         </button>
+                        
 
                     </form>
+                    <a href="{{('posts/edit')}}"><button class="col-4 btn  btn-warning mb-5">
+                            Edit
+                    </button></a>
+                    </div>
                 </div>
             </div>
             @endforeach
             
         </div>
         <a href="{{('posts/create')}}"><button class="btn  btn-primary mb-5">
-                TAmbah
+                Tambah
         </button></a>
+        
     </div>
      
         

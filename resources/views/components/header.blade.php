@@ -22,9 +22,9 @@
 
             <div class="text-center text-light">
 
-                <h1 class="display-3 fw-bold"data-aos="zoom-out-down">{{ $title }}</h1>
+                <h1 class="display-3 fw-bold"data-aos="zoom-out-down"data-aos-offset="200">{{ $title }}</h1>
 
-                <p class="lead "data-aos="zoom-out-up">{{ $subtitle }}</p>
+                <p class="lead "data-aos="zoom-out-up"data-aos-offset="250">{{ $subtitle }}</p>
 
             </div>
 

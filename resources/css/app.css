@@ -1,4 +1,7 @@
 @import "./navbar.css";
+* {
+    box-sizing: border-box;
+}
 [data-aos] {
     opacity: 0;
     filter: blur(8px);

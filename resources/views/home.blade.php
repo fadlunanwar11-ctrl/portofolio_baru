@@ -4,13 +4,13 @@
     bgImage="/img/madin.jpeg"
     data-aos-once="false"
 >
-    <div class="text-center">
-        <h2 class="fw-bold displai-3 mt-5 text-light">SRUKTUR KEPENGURUSAN MADIN</h2>
+    <div class="text-center vh-75 d-flex align-items-center justify-content-center">
+        <h2 class="fw-bold  displai-3 mt-5 text-light">SRUKTUR KEPENGURUSAN MADIN</h2>
     </div>
     <div class="container m-5 d-flex align-items-center vh-100 " >
         
         <div class="row g-0 justify-content-around ">
-            <div class="col-md-3 mb-2"data-aos="zoom-in-down"
+            <div class="col-md-3 mb-2"data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine">
                 <img
@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-4  my-auto p-2 text-center fw-bold">
                 <div >
-                    <h2 class="text-info"data-aos="fade-left"
+                    <h2 class="text-info border-3 border-info border-bottom p-2 "data-aos="fade-left"
                     data-aos-offset="100"
                     data-aos-easing="ease-in-sine">KH Dr.Ali Muhdi, MPd</h2>
                     <p class="text-white"data-aos="fade-left"
@@ -44,7 +44,9 @@
             <div class="col-md-6 d-flex align-items-center vh-100">
                 <div class="continer " >
                     <div class="row g-0 justify-content-between ">
-                        <div class="col-md-6 mb-2 p-5">
+                        <div class="col-md-6 mb-2 p-5"data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine">
                             <img
                                 src="{{ asset('storage/' . $post->image) }}"
                                 alt=""
@@ -61,8 +63,8 @@
                                 data-aos-easing="ease-in-sine">
                                 {{ $post->description }}
                                 </p>
-                                <p class="card-text">
-                                 <small class="text-muted">{{ $post->updated_at->format('d M Y') }}</small> 
+                                <p class="card-text ">
+                                 <small class="text-muted">updated at {{ $post->updated_at->diffForHumans() }}</small> 
                                 </p>
                             </div>
                         </div>
